@@ -1,5 +1,5 @@
 import os
-os.environ["OPENAI_API_KEY"] = "Your_API_Key"
+os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
 !pip install -q youtube-transcript-api langchain-community langchain-google-genai google-generativeai \
                faiss-cpu tiktoken python-dotenv
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled

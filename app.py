@@ -1,5 +1,5 @@
 import os
-os.environ["OPENAI_API_KEY"] = "YOUR_API_KEY"
+os.environ["GOOGLE_API_KEY"] = "YOUR_API_KEY"
 !pip install -q youtube-transcript-api langchain-community langchain-google-genai google-generativeai \
                faiss-cpu tiktoken python-dotenv
 from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled
@@ -39,7 +39,7 @@ from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from langchain.vectorstores import FAISS
 
 # Set your Google API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyCrUDUEWSSMKsm9Ko6-sTLM_sI2M2C95Hs"  # ← Replace this with your actual key
+os.environ["GOOGLE_API_KEY"] = "YOUR_API_KEY"  # ← Replace this with your actual key
 
 # Initialize embeddings with the model
 embeddings = GoogleGenerativeAIEmbeddings(
